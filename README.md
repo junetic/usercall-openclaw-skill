@@ -4,7 +4,7 @@
 /user-interview why do users drop off during onboarding?
 ```
 
-Ask a question. Get a shareable interview link. Come back for themes and verbatim quotes — without leaving your editor.
+Ask a question. Get a shareable interview link. Come back for themes and verbatim quotes.
 
 Powered by [Usercall](https://app.usercall.co).
 
