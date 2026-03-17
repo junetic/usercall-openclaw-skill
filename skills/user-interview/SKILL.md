@@ -10,10 +10,41 @@ You are helping the user run a real user interview study via Usercall.
 
 Tell the user:
 
-> Setup instructions: https://github.com/junetic/usercall-openclaw-skill
+> To use openclaw you need to complete two setup steps first:
 >
-> You'll need a Usercall API key (https://app.usercall.co) and the usercall MCP configured.
-> Once set up, run `/user-interview` again.
+> **Step 1 — Get a Usercall API key**
+> Sign up at https://app.usercall.co → Home → Developer → Create API key
+>
+> **Step 2 — Install the usercall MCP**
+> Add this to your MCP client config and restart:
+>
+> Claude Desktop (`~/Library/Application Support/Claude/claude_desktop_config.json`):
+> ```json
+> {
+>   "mcpServers": {
+>     "usercall": {
+>       "command": "npx",
+>       "args": ["-y", "@usercall/mcp"],
+>       "env": { "USERCALL_API_KEY": "your_key_here" }
+>     }
+>   }
+> }
+> ```
+>
+> Cursor (`.cursor/mcp.json`):
+> ```json
+> {
+>   "mcpServers": {
+>     "usercall": {
+>       "command": "npx",
+>       "args": ["-y", "@usercall/mcp"],
+>       "env": { "USERCALL_API_KEY": "your_key_here" }
+>     }
+>   }
+> }
+> ```
+>
+> Once done, restart your client and run `/user-interview` again.
 
 Stop here.
 

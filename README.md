@@ -20,9 +20,41 @@ Restart your client.
 
 ## Setup
 
-Sign up at [app.usercall.co](https://app.usercall.co) and create an API key.
+**1. Get a Usercall API key**
 
-Run `/user-interview` — it will walk you through the rest.
+Sign up at [app.usercall.co](https://app.usercall.co) → Home → Developer → Create API key
+
+**2. Install the usercall MCP**
+
+Claude Desktop (`~/Library/Application Support/Claude/claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "usercall": {
+      "command": "npx",
+      "args": ["-y", "@usercall/mcp"],
+      "env": { "USERCALL_API_KEY": "your_key_here" }
+    }
+  }
+}
+```
+
+Cursor (`.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "usercall": {
+      "command": "npx",
+      "args": ["-y", "@usercall/mcp"],
+      "env": { "USERCALL_API_KEY": "your_key_here" }
+    }
+  }
+}
+```
+
+Restart your client.
 
 ## Usage
 
