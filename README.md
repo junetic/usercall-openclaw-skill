@@ -24,37 +24,13 @@ Restart your client.
 
 Sign up at [app.usercall.co](https://app.usercall.co) → Home → Developer → Create API key
 
-**2. Install the usercall MCP**
+**2. Set the environment variable**
 
-Claude Desktop (`~/Library/Application Support/Claude/claude_desktop_config.json`):
-
-```json
-{
-  "mcpServers": {
-    "usercall": {
-      "command": "npx",
-      "args": ["-y", "@usercall/mcp"],
-      "env": { "USERCALL_API_KEY": "your_key_here" }
-    }
-  }
-}
+```bash
+export USERCALL_API_KEY="your_key_here"
 ```
 
-Cursor (`.cursor/mcp.json`):
-
-```json
-{
-  "mcpServers": {
-    "usercall": {
-      "command": "npx",
-      "args": ["-y", "@usercall/mcp"],
-      "env": { "USERCALL_API_KEY": "your_key_here" }
-    }
-  }
-}
-```
-
-Restart your client.
+Add it to your `~/.zshrc` or `~/.bashrc` to make it permanent.
 
 ## Usage
 
