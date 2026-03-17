@@ -1,5 +1,5 @@
 ---
-name: openclaw
+name: user-interview
 description: Run real user interviews via Usercall. Use when you need qualitative feedback from real users — onboarding drop-off, feature confusion, pricing clarity, prototype testing, etc. Requires usercall MCP configured with a Usercall API key (https://app.usercall.co).
 argument-hint: "[research goal or topic]"
 ---

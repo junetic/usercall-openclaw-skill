@@ -1,11 +1,11 @@
-# openclaw — user interviews inside Claude Code
+# user-interview — user interviews inside Claude Code
 
 A Claude Code skill that lets you run real user interviews without leaving your editor.
 
 Ask a question. Get a shareable interview link. Come back for themes and verbatim quotes.
 
 ```
-/openclaw why do users drop off during onboarding?
+/user-interview why do users drop off during onboarding?
 ```
 
 ## What it does
@@ -70,15 +70,15 @@ Restart your MCP client.
 ## Usage
 
 ```
-/openclaw [research topic]
+/user-interview [research topic]
 ```
 
 Examples:
 
 ```
-/openclaw why do users drop off during onboarding?
-/openclaw is our pricing page clear?
-/openclaw feedback on this prototype: https://figma.com/proto/...
+/user-interview why do users drop off during onboarding?
+/user-interview is our pricing page clear?
+/user-interview feedback on this prototype: https://figma.com/proto/...
 ```
 
 Without arguments, the skill walks you through it interactively.
