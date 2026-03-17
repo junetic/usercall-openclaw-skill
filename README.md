@@ -1,6 +1,4 @@
-# openclaw
-
-Run real user interviews from your AI editor.
+# openclaw — user interviews from your editor
 
 ```
 /user-interview why do users drop off during onboarding?
