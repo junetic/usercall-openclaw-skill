@@ -1,6 +1,6 @@
 ---
 name: user-interview
-description: Run real user interviews via Usercall. Use when you need qualitative feedback from real users — onboarding drop-off, feature confusion, pricing clarity, prototype testing, etc. Requires a USERCALL_API_KEY environment variable (https://app.usercall.co).
+description: Run real user interviews via Usercall. Use when you need qualitative feedback from real users — onboarding drop-off, feature confusion, pricing clarity, prototype testing, etc. Required environment variable: USERCALL_API_KEY (get one at https://app.usercall.co). No other credentials or installs needed.
 argument-hint: "[research goal or topic]"
 allowed-tools: Bash
 ---
