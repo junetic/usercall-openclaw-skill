@@ -1,4 +1,4 @@
-# openclaw — user interviews from your editor
+# openclaw user research skill
 
 ```
 /user-interview why do users drop off during onboarding?
