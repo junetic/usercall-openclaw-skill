@@ -1,21 +1,16 @@
-# user-interview — user interviews inside Claude Code
+# openclaw
 
-A Claude Code skill that lets you run real user interviews without leaving your editor.
-
-Ask a question. Get a shareable interview link. Come back for themes and verbatim quotes.
+Run real user interviews from your AI editor.
 
 ```
 /user-interview why do users drop off during onboarding?
 ```
 
-## What it does
+Ask a question. Get a shareable interview link. Come back for themes and verbatim quotes — without leaving your editor.
 
-- Creates a Usercall interview study from your research goal
-- Returns a shareable link to send to participants
-- Retrieves themes and verbatim quotes when interviews are complete
-- Supports Figma prototypes and image mockups as visual stimulus
+Powered by [Usercall](https://app.usercall.co).
 
-Powered by [Usercall](https://app.usercall.co) — AI-moderated voice interviews with real users.
+---
 
 ## Install
 
@@ -23,15 +18,15 @@ Powered by [Usercall](https://app.usercall.co) — AI-moderated voice interviews
 /plugin install github:junetic/usercall-openclaw-skill
 ```
 
-Then restart Claude Code.
+Restart your client.
 
-## Setup (first use)
+## Setup
 
 **1. Get an API key**
 
 Sign up at [app.usercall.co](https://app.usercall.co) → Home → Developer → Create API key
 
-**2. Add the MCP server to your config**
+**2. Add usercall MCP**
 
 Claude Desktop (`~/Library/Application Support/Claude/claude_desktop_config.json`):
 
@@ -41,9 +36,7 @@ Claude Desktop (`~/Library/Application Support/Claude/claude_desktop_config.json
     "usercall": {
       "command": "npx",
       "args": ["-y", "@usercall/mcp"],
-      "env": {
-        "USERCALL_API_KEY": "your_key_here"
-      }
+      "env": { "USERCALL_API_KEY": "your_key_here" }
     }
   }
 }
@@ -57,23 +50,19 @@ Cursor (`.cursor/mcp.json`):
     "usercall": {
       "command": "npx",
       "args": ["-y", "@usercall/mcp"],
-      "env": {
-        "USERCALL_API_KEY": "your_key_here"
-      }
+      "env": { "USERCALL_API_KEY": "your_key_here" }
     }
   }
 }
 ```
 
-Restart your MCP client.
+Restart your client.
 
 ## Usage
 
 ```
-/user-interview [research topic]
+/user-interview [topic]
 ```
-
-Examples:
 
 ```
 /user-interview why do users drop off during onboarding?
@@ -81,13 +70,7 @@ Examples:
 /user-interview feedback on this prototype: https://figma.com/proto/...
 ```
 
-Without arguments, the skill walks you through it interactively.
-
-## Requirements
-
-- Claude Code (any version)
-- Node.js 18+
-- A Usercall API key ([free to start](https://app.usercall.co))
+Without arguments, it walks you through interactively.
 
 ## License
 
